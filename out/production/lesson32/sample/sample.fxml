@@ -2,10 +2,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.BubbleChart?>
 <VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="sample.Controller"> <!-- this is the fxml controller there can only be one. sample is the package name-->
+      fx:controller="sample.Controller">
 
-    <Label text="I love bacon"/>
-    <Button text="Submit" fx:id="button" onAction="#handleButtonClick"/> <!--by giving this Button an fx:id we can access it in the controller-->
+    <Label text="I love bacon" fx:id="label1"/>
+    <Label text="the below text is bound to the above text, press the button at the bottom to see them both change"/>
+    <Label text="${label1.text}"/>
+    <Button text="click me!" fx:id="button" onAction="#changeText"/>
 
 </VBox>
