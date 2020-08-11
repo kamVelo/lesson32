@@ -8,8 +8,6 @@
       fx:controller="sample.Controller">
 
     <Label text="I love bacon" fx:id="label1"/>
-    <Label text="the below text is bound to the above text, press the button at the bottom to see them both change"/>
-    <Label text="${label1.text}"/>
-    <Button text="click me!" fx:id="button" onAction="#changeText"/>
+    <Button text="submit"/>
 
 </VBox>
